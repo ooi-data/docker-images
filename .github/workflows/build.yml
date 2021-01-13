@@ -29,7 +29,7 @@ jobs:
         run: |
           CALVER="$( date -u '+%Y.%m.%d' )"
           SHA7="${GITHUB_SHA::7}"
-          DOCKER_TAG=${GITHUB_REF}
+          DOCKER_TAG=$(echo "$GITHUB_REF" | sed 's/refs\/tags\///g')
           IMAGE_SPEC="${DOCKER_ORG}/${{ matrix.IMAGE }}:${DOCKER_TAG}"
           IMAGE_SPEC_LATEST="${DOCKER_ORG}/${{ matrix.IMAGE }}:latest"
           echo "SHA7=${SHA7}" >> $GITHUB_ENV
