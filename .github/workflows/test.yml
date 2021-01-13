@@ -3,7 +3,7 @@ name: Test Images
 on:
   pull_request:
     branches:
-      - master
+      - main
     paths-ignore:
       - 'README.md'
       - 'docker-compose.yml'
