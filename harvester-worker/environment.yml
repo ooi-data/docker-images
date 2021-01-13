@@ -12,7 +12,7 @@ dependencies:
   - tornado=6.0.4
   - dask-kubernetes=0.11.0
   - dask-gateway=0.8.0
-  - numba=0.48
+  - numba
   - cloudpickle=1.6
   - prefect=0.13.8
   - geopandas
@@ -35,6 +35,5 @@ dependencies:
   - siphon
   - pip:
       # TODO: Need to figure out pangeo-forge dependency ...
-      - git+https://github.com/pangeo-forge/pangeo-forge.git@0.1.0
       - git+https://github.com/ooi-data/ooi-harvester.git@main
       - gspread==3.6
