@@ -1,0 +1,8 @@
+version: "3.2"
+
+services:
+  harvester-worker:
+    build:
+      context: ./harvester-worker
+      dockerfile: ./Dockerfile
+    image: cormorack/harvester-worker:20210112-dev
