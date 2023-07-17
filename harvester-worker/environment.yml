@@ -20,8 +20,8 @@ dependencies:
   - lxml
   - pika
   - fsspec
-  - s3fs
-  - boto3
+  - s3fs<2022.8.0
+  - boto3<1.26.42
   - fastparquet
   - cmocean
   - loguru
