@@ -5,4 +5,4 @@ services:
     build:
       context: ./harvester-worker
       dockerfile: ./Dockerfile
-    image: cormorack/harvester-worker:20210112-dev
+    image: cormorack/harvester-worker:20230717
